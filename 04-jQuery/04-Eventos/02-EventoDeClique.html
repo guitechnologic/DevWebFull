@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh"  content="5">
+        <title>Curso jQuery Fundamental</title>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+
+            $(function() {
+                $('#cursohtml').click( function() {
+                    //console.log("clicou");
+                    alert("Cricou HTML");
+                })
+
+                $('#cursocss').on("click", function() {
+                    //console.log("clicou");
+                    alert("Cricou CSS");
+                })
+
+                $('#cursocss').on("mouseover", function() {
+                    //console.log("clicou");
+                    //alert("Cricou CSS");
+                })
+                
+                function mostrarMsg() {
+                    alert("passou o mouse");
+                }
+                //$('#cursocss').on("mouseover", mostrarMsg)
+
+                function mostrarMsg() {
+                    alert("passou o mouse");
+                    $('#cursohtml').off("mouseover", mostrarMsg)
+                }
+
+
+
+
+
+            })
+
+					
+		</script>        
+    </head>
+
+    <body>
+        <input type="button" id="cursohtml" value="Curso HTML5" />
+        <input type="button" id="cursocss" 	value="Curso CSS3" />
+        
+        
+    </body>
+
+</html>

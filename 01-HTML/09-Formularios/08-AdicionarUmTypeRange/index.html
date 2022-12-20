@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso HTML5 Essencial</title>
+
+        <script>
+            function mostrarResultado() {
+                document.getElementById("resultado").innerHTML = document.getElementById("filhos").value;
+            }
+        </script>
+        <!-- Funcao para chamar e apresentar o numero no slide -->
+
+
+    </head>
+
+    <body onload="mostrarResultado">
+        <form action="index.html" method="post">
+            <input type="range" id="filhos" min="1" max="10" value="1" onchange="mostrarResultado()">
+            <span id="resultado"></span>
+
+            <!-- Range é uma barrinha deslizante para escolher um numero, value é o valor inicial -->
+            <!-- Onchange chama a funcao para mostrar o numero -->
+
+        </form>
+    </body>
+</html>

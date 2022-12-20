@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh"  content="5"> 
+        <title>Curso jQuery Fundamental</title> 
+    </head>
+
+    <body>
+    	<nav>
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+            <a href="#">Usa</a>
+            <a href="#">China</a>
+        </nav>
+        <a href="#">Canada</a>
+        
+		<!-- scripts -->
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>    
+        	console.log("Essa pagina contem " + $("nav a").length + " links");
+        </script>   
+
+        <script>
+            $(function(){
+                $("nav a:odd").css("color","red").css("text-decoration","none").css("display","block");
+                $("nav a:contains('Brasil')").css("color","red").css("text-decoration","none").css("display","block");
+                $("nav a:first").css("color","red").css("text-decoration","none").css("display","block");
+
+            })
+        </script>
+                
+    </body>
+</html>

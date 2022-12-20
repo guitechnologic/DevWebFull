@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<title>Art Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+	<style>
+		body {font-family: "Raleway", Arial, sans-serif}
+		.row img {margin-bottom: -8px}
+	</style>
+	<body>
+		
+		<!-- !PAGE CONTENT! -->
+		<div class="content" style="max-width:1500px">
+			
+			<!-- Header -->
+			<header class="container xlarge padding-24">
+				<a href="#" class="left button white">MY ART</a>
+				<a href="#about" class="right button white">About</a>
+			</header>
+			
+			<!-- Photo Grid -->
+			<div class="row">
+				<div class="half">
+					<img src="Imagens/streetart.jpg" style="width:100%">
+					<img src="Imagens/streetart2.jpg" style="width:100%">
+					<img src="Imagens/streetart5.jpg" style="width:100%">
+				</div>
+				
+				<div class="half">
+					<img src="Imagens/streetart3.jpg" style="width:100%">
+					<img src="Imagens/streetart4.jpg" style="width:100%">
+				</div>
+			</div>
+			
+			<!-- End Page Content -->
+		</div>
+		
+		<!-- Footer / About Section -->
+		<footer class="light-grey padding-64 center" id="about">
+			<h2>About</h2>
+			<img src="Imagens/boy.jpg" class="image padding-32" width="300" height="300">
+			<form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+				<p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+				<p class="large text-pink">Do not hesitate to contact me!</p>
+				<div class="section">
+					<label><b>Name</b></label>
+					<input class="input border" type="text" required name="Name">
+				</div>
+				<div class="section">
+					<label><b>Email</b></label>
+					<input class="input border" type="text" required name="Email">
+				</div>
+				<div class="section">
+					<label><b>Message</b></label>
+					<input class="input border" required name="Message">
+				</div>
+				<button type="submit" class="button block dark-grey">Send</button>
+			</form>
+			<br>
+			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green">w3.css</a></p>
+		</footer>
+		
+	</body>
+</html>
